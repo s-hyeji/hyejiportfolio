@@ -1,6 +1,87 @@
 /* 모바일 css */
+#wrap{
+    margin: auto;
+    position: relative;
+}
+/* 해더 */
 .main_logo{
     background-image: var(--mainlogo_m);
-    width: 128px;
-    height: 84px;
-}      
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    z-index: 100;
+}
+.burger_bar_btn{
+    text-indent: -9999px;
+    background-image: var(--menu_btn);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 52%;
+    right: 4%;
+    width: 23px;
+    height: 21px;
+}
+.header{
+    width: 100%;
+    height: 78px;
+    position: fixed;
+}   
+nav{
+    /* display: none; */
+    position: absolute;
+    width: 45%;
+    height: 100vh;
+    right: 0%;
+
+    background-color: var(--mainbg);
+    border-left: 2px solid var(--titlefont);
+}
+.main_gnb{
+    position: relative;
+    top: 25%;
+}
+.main_gnb li{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 34%;
+
+    text-transform: uppercase;
+}
+.main_gnb li.mode_change button{
+    border: 1px solid var(--titlefont);
+    border-radius: 22px;
+    width: 55%;
+    /* height: 40%; */
+    margin: auto;
+}
+.main_gnb li.mode_change .btn{
+    text-indent: -9999px;
+    background-image: var(--modechange);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 6px auto;
+}
+.main_gnb li.mode_change button:hover .btn{
+    background-image: var(--modechange_a);    
+}
+.main_gnb li.mode_change button:hover{
+    border: 1px solid var(--pointfont);
+}
+
+
+
+/* 섹션 */
+section{
+    display: none;
+}
+/* 푸터 */
+footer{
+    display:none;
+}

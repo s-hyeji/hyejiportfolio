@@ -7,6 +7,10 @@
 
     /* 이미지 */
     --mainlogo_m: url(../imgs/moblie_logo_dark.svg); /*모바일로고*/
+    --mainlogo_p: url(../imgs/logo_dark.svg); /*큰 로고*/
+    --menu_btn: url(../imgs/ic_menu_dark.svg); /*메뉴버튼*/
+    --modechange: url(../imgs/ic_sun.png);
+    --modechange_a: url(../imgs/ic_sun_a.png);
 
 }
 :root.light{
@@ -17,7 +21,9 @@
     --titlefont:#7E56A5; /*로고, 제목*/
 
     /* 이미지 */
-    --mainlogo_m: url(../imgs/moblie_logo_dark.svg); /*모바일로고*/
+    --mainlogo_m: url(../imgs/mobile_logo_light.svg); /*모바일로고*/
+    --mainlogo_p: url(../imgs/logo_light.svg); /*큰 로고*/
+    --menu_btn: url(../imgs/ic_menu_light.svg); /*메뉴버튼*/
 }
 
 body{

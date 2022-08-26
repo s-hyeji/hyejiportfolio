@@ -1,9 +1,6 @@
 /* 모바일 css */
-.menu{
-    width: 100%;
-    height: 78px;
-    background-color: #fff;
-}
-nav{
-  
-}
+.main_logo{
+    background-image: var(--mainlogo_m);
+    width: 128px;
+    height: 84px;
+}      

@@ -1,4 +1,26 @@
+:root{
+    --mainbg:#000F26;
+    --pointfont:#FFE600;
+    --basicfont:#fff;
+    --subfont:#FFF48E;
+    --titlefont:#fff;
+
+    /* 이미지 */
+    --mainlogo_m: url(../imgs/moblie_logo_dark.svg); /*모바일로고*/
+
+}
+:root.light{
+    --mainbg:#fff;
+    --pointfont:#AB00FF;
+    --basicfont:#000F26;
+    --subfont:#CA97F6;
+    --titlefont:#7E56A5; /*로고, 제목*/
+
+    /* 이미지 */
+    --mainlogo_m: url(../imgs/moblie_logo_dark.svg); /*모바일로고*/
+}
+
 body{
-    background: #000F26;
-    color: #fff;
+    background: var(--mainbg);
+    color: var(--basicfont);
 }

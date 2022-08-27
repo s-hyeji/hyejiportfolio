@@ -24,6 +24,8 @@
     --mainlogo_m: url(../imgs/mobile_logo_light.svg); /*모바일로고*/
     --mainlogo_p: url(../imgs/logo_light.svg); /*큰 로고*/
     --menu_btn: url(../imgs/ic_menu_light.svg); /*메뉴버튼*/
+    --modechange: url(../imgs/ic_moon.png);
+    --modechange_a: url(../imgs/ic_moon_a.png);
 }
 
 body{

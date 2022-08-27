@@ -4,7 +4,7 @@
     position: relative;
 }
 /* 해더 */
-.main_logo{
+.main_logo a{
     background-image: var(--mainlogo_m);
     width: 30px;
     height: 30px;
@@ -24,6 +24,8 @@
     right: 4%;
     width: 23px;
     height: 21px;
+
+    cursor: pointer;
 }
 .header{
     width: 100%;
@@ -31,7 +33,7 @@
     position: fixed;
 }   
 nav{
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 45%;
     height: 100vh;
@@ -39,13 +41,14 @@ nav{
 
     background-color: var(--mainbg);
     border-left: 2px solid var(--titlefont);
+    color: var(--titlefont);
 }
 .main_gnb{
     position: relative;
     top: 25%;
 }
 .main_gnb li{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     margin-bottom: 34%;

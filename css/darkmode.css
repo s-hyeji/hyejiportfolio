@@ -12,7 +12,13 @@
     --modechange: url(../imgs/ic_sun.png);
     --modechange_a: url(../imgs/ic_sun_a.png);
 
+    /* 삼각형이미지 */
+    --mainqr_1: url(../imgs/ic_main_qr_dark_1.svg);
+    --mainqr_2: url(../imgs/ic_main_qr_dark_2.svg);
+    --mainqr_3: url(../imgs/ic_main_qr_dark_3.svg);
+
 }
+
 :root.light{
     --mainbg:#fff;
     --pointfont:#AB00FF;
@@ -26,6 +32,11 @@
     --menu_btn: url(../imgs/ic_menu_light.svg); /*메뉴버튼*/
     --modechange: url(../imgs/ic_moon.png);
     --modechange_a: url(../imgs/ic_moon_a.png);
+
+        /* 삼각형이미지 */
+        --mainqr_1: url(../imgs/ic_main_qr_light_1.svg);
+        --mainqr_2: url(../imgs/ic_main_qr_light_2.svg);
+        --mainqr_3: url(../imgs/ic_main_qr_light_3.png);
 }
 
 body{

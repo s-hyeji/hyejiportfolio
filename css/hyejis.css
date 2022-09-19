@@ -1,5 +1,6 @@
 /* 모바일 css */
 #wrap{
+    width: 100%;
     margin: auto;
     position: relative;
 }
@@ -84,7 +85,7 @@ nav{
 
 
 /* 공동섹션 */
-section div{
+section > div{
     padding-top: 100px;
     min-height: 100vh;
     /* height: 900px; */
@@ -109,7 +110,7 @@ section #main h2 .tit{
     align-items: center;
     min-height: 100vh;
 
-    font-size: 180%;
+    font-size: 200%;
     font-family: 'yg-jalnan';
     width: 90%;
     margin: 0 auto;
@@ -125,65 +126,177 @@ section #main h2 .tit .main_tit1{
     line-height: 0.6em;
 }
 section #main h2 .tit .main_tit3{
-    margin-left: 20%;
+    margin-left: 30%;
     color: var(--titlefont);
     line-height: 1.3em;
     
 }
 section #main .main_qr_img{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    width: 90%;
+    width: 100%;
     height: 100%;
+    top: 24%;
+    left: 16%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
-section #main .main_qr_img span:first-child{
+section #main .main_qr_img span{
     position: absolute;
+    display: block;
+    text-align: center;
     width: 80%;
-    height: 50%;
-    background-image: var(--mainqr_1);
+    height: 80%;
+    background-image: var(--mainqrs);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: auto;
+    margin: 0 auto;
+}
 
-    animation: rotate_img 8s linear infinite ;
-    transform-origin: 50% 50% ;
+
+
+
+/* 공통 */
+.thetit{
+    text-align: center;
+    margin: auto ;
+    
+    width: 100%;
+    margin-bottom: 94px;
+
+    z-index: 100;
+    position: relative;
+}
+.point{
+    color: var(--pointfont);
+}
+.thetit p{
+    font-family: 'yg-jalnan';
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--titlefont);
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+/* 어바웃미 */
+
+#me .txt1 h3{
+    text-align: center;
+    margin: auto ;
+    font-family: 'yg-jalnan';
+    line-height: 1.35;
+
+    font-size: 16px;
 
 }
-section #main .main_qr_img span:nth-child(2){
-    position: absolute;
-    background-image: var(--mainqr_2);
+#me .txt1 h3::after{
+    width: 140px;
+    height: 1px;
+    background-color: var(--titlefont);
+    content: '';
+    display: block;
+    margin: 20px auto;
+}
+#me .txt1 .txt1_con{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+#me .txt2{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+#me .txt2 > h3::after{
+    width: 140px;
+    height: 1px;
+    background-color: var(--titlefont);
+    content: '';
+    display: block;
+    margin: 20px auto;
+}
+#me .txt2 > h3{
+    font-family: yg-jalnan;
+    font-size: 16px;
+}
+#me .txt2 ul li h3{
+    font-family: yg-jalnan;
+    padding: 20px 0;
+    color: var(--pointfont);
+}
+#me .txt2 ul li p{
+    font-weight: bold;
+    padding-bottom: 10px;
+    line-height: 1.35;
+}
+#me .resume{
+    margin: 0 auto;
+    margin-top:60px;
+    text-align: center;
+}
+#me .resume button{
+    border: 2px solid var(--titlefont);
+    padding: 10px 20px;
+    border-radius: 11px;
+}
+/* 스킬 */
+#skill{
+    margin-top: 100px;
+}
+#skill .ic_skills{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.65;
+}
+#skill .ic_skills span{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url(../imgs/ic_skill_m.png);
+    display: block;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 70px;
+}
+
+/* 콘택 */
+#contact .txt3{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
     width: 80%;
-    height: 50%;
-    right: 8%;
-    bottom: 8%;
+    line-height: 1.35;
 }
-section #main .main_qr_img span:nth-child(3){
-    position: absolute;
-    background-image: var(--mainqr_3);
+#contact .txt3 p::after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 1px;
+    background-color:var(--titlefont);
+    margin: 30px auto;
+}
+#contact .txt3 p:nth-child(2):after{
+    display: none;
+}
+#contact .txt3 span{
+    background-image: var(--mainlogo_p);
+    width: 120px;
+    height: 78px;
+    display: block;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 50%;
-    left: 2%;
-    bottom: 0%; 
-/* 
-    animation: rotate_img 10s linear ;
-    transform-origin: 50% 50% ; */
+
+
+    margin: 0 auto;
 }
-
-@keyframes rotate_img {
-    0%{
-    }
-    100% {
-    	transform: rotate(360deg);
-    }
-  }
-
 /* 푸터 */
 footer{
     display:none;

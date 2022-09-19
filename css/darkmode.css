@@ -13,9 +13,8 @@
     --modechange_a: url(../imgs/ic_sun_a.png);
 
     /* 삼각형이미지 */
-    --mainqr_1: url(../imgs/ic_main_qr_dark_1.svg);
-    --mainqr_2: url(../imgs/ic_main_qr_dark_2.svg);
-    --mainqr_3: url(../imgs/ic_main_qr_dark_3.svg);
+    --mainqrs: url(../imgs/ic_main_qrs_dark.svg);
+
 
 }
 
@@ -34,12 +33,11 @@
     --modechange_a: url(../imgs/ic_moon_a.png);
 
         /* 삼각형이미지 */
-        --mainqr_1: url(../imgs/ic_main_qr_light_1.svg);
-        --mainqr_2: url(../imgs/ic_main_qr_light_2.svg);
-        --mainqr_3: url(../imgs/ic_main_qr_light_3.png);
+        --mainqrs: url(../imgs/ic_main_qrs_light.svg);
 }
 
 body{
     background: var(--mainbg);
     color: var(--basicfont);
+    font-size: 14px;
 }

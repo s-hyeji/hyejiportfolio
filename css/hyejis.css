@@ -143,7 +143,7 @@ section #main .main_qr_img{
     display: block;
 }
 section #main .main_qr_img span{
-    position: absolute;
+    /* position: absolute; */
     display: block;
     text-align: center;
     width: 80%;

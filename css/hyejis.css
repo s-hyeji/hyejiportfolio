@@ -36,14 +36,14 @@
     background-color: var(--mainbg);
 }   
 nav{
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 45%;
     height: 100vh;
     right: 0%;
 
-    background-color: var(--mainbg);
-    border-left: 2px solid var(--titlefont);
+    background-color: var(--btnbg);
+    border-left: 20px solid var(--btnbd);
     color: var(--titlefont);
 
 }
@@ -55,12 +55,15 @@ nav{
     font-size: 1.4em;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 34%;
+    margin-bottom: 120px;
 
     text-transform: uppercase;
 }
+.main_gnb li:hover{
+    color: var(--pointfont);
+}
 .main_gnb li.mode_change button{
-    border: 1px solid var(--titlefont);
+    border: 2px solid var(--titlefont);
     border-radius: 22px;
     width: 55%;
     /* height: 40%; */
@@ -79,7 +82,7 @@ nav{
     background-image: var(--modechange_a);    
 }
 .main_gnb li.mode_change button:hover{
-    border: 1px solid var(--pointfont);
+    border: 2px solid var(--pointfont);
 }
 
 
@@ -136,7 +139,7 @@ section #main .main_qr_img{
     min-height: 100vh;
     width: 100%;
     height: 100%;
-    top: 24%;
+    top: 30%;
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -163,7 +166,7 @@ section #main .main_qr_img span{
     width: 100%;
     margin-bottom: 112px;
 
-    z-index: 100;
+    /* z-index: 100; */
     position: relative;
     color: var(--titlefont);
 }
@@ -269,7 +272,7 @@ section #main .main_qr_img span{
 /* 프로젝트 */
 #project{
     margin-top: 0px;
-    padding-top: 0px;
+    margin-bottom: 400px;
 }
 /* 콘택 */
 #contact .txt3{
@@ -278,6 +281,7 @@ section #main .main_qr_img span{
     font-weight: bold;
     width: 80%;
     line-height: 1.35;
+    
 }
 #contact .txt3 p::after{
     content: "";
@@ -309,4 +313,86 @@ footer{
 /* 테블릿 */
 @media screen and (min-width : 768px) {
     
+    /* 메인 */
+    section #main .main_qr_img{
+    padding-left: 8%;
+    top:24%;
+    }
+    section #main h2 .tit{
+        font-size: 230%;
+    }
+    section #main h2 .tit .main_tit3{
+        margin-left: 38%;
+    }
+
+    /* 공통 타이틀 */
+    .thetit{
+        font-size: 16px;
+    }
+}
+
+/* PC */
+@media screen and ( min-width : 1024px ){
+ .main_logo a{
+    width: 100%;
+    height: 100%;
+    background-image: var(--mainlogo_p);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 48px;
+    top: 42px;
+}
+.burger_bar_btn{
+    display: none;
+}
+section{
+    margin-left: 226px;
+}
+nav{
+    display: block;
+    left: 0%;
+    border: 0;
+
+    width: 226px;
+}
+.main_gnb li{
+    margin-bottom: 110px;
+}
+.main_gnb li:last-child{
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
+
+.thetit{
+    font-size: 20px;
+}
+.m_only{
+    display: none;
+}
+#me .txt1 .txt1_con{
+    text-align: left;
+    padding-left: 12%;
+    font-size: 16px;
+}
+#me .txt1 h3{
+    text-align: left;
+    padding-left: 12%;
+    font-size: 24px;
+}
+#me .txt1 h3::after{
+    margin: 20px 0;
+}
+#me .txt2{
+    text-align: right;
+    padding-right: 12%;
+    font-size: 16px;
+    margin-top: 160px;
+}
+#me .txt2 > h3{
+    font-size: 24px;
+    text-align: right;
+}
+#me .txt2 > h3::after{
+    margin: 20px 0;
+}
 }

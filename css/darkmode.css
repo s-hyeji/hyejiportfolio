@@ -4,7 +4,10 @@
     --basicfont:#fff;
     --subfont:#FFF48E;
     --titlefont:#fff;
-
+    /* 토굴배경 */
+    --btnbg:#0e1f39;
+    --btnbd:#02235497;
+    
     /* 이미지 */
     --mainlogo_m: url(../imgs/moblie_logo_dark.svg); /*모바일로고*/
     --mainlogo_p: url(../imgs/logo_dark.svg); /*큰 로고*/
@@ -24,6 +27,10 @@
     --basicfont:#000F26;
     --subfont:#CA97F6;
     --titlefont:#7E56A5; /*로고, 제목*/
+    /* 토굴배경 */
+    --btnbg:#eeddfc;
+    --btnbd:#7d56a580;
+
 
     /* 이미지 */
     --mainlogo_m: url(../imgs/mobile_logo_light.svg); /*모바일로고*/
@@ -40,4 +47,7 @@ body{
     background: var(--mainbg);
     color: var(--basicfont);
     font-size: 14px;
+}
+html{
+    min-height: 100vh;
 }

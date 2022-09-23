@@ -137,7 +137,7 @@ section #main .main_qr_img{
     width: 100%;
     height: 100%;
     top: 24%;
-    left: 16%;
+    /* left: 16%; */
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -163,10 +163,11 @@ section #main .main_qr_img span{
     margin: auto ;
     
     width: 100%;
-    margin-bottom: 94px;
+    margin-bottom: 112px;
 
     z-index: 100;
     position: relative;
+    color: var(--titlefont);
 }
 .point{
     color: var(--pointfont);
@@ -193,7 +194,7 @@ section #main .main_qr_img span{
 #me .txt1 h3::after{
     width: 140px;
     height: 1px;
-    background-color: var(--titlefont);
+    background-color: var(--basicfont);
     content: '';
     display: block;
     margin: 20px auto;
@@ -214,9 +215,9 @@ section #main .main_qr_img span{
 
 }
 #me .txt2 > h3::after{
-    width: 140px;
+    width: 100px;
     height: 1px;
-    background-color: var(--titlefont);
+    background-color: var(--basicfont);
     content: '';
     display: block;
     margin: 20px auto;
@@ -237,13 +238,14 @@ section #main .main_qr_img span{
 }
 #me .resume{
     margin: 0 auto;
-    margin-top:60px;
+    margin-top:100px;
     text-align: center;
 }
 #me .resume button{
     border: 2px solid var(--titlefont);
     padding: 10px 20px;
     border-radius: 11px;
+    color: var(--titlefont);
 }
 /* 스킬 */
 #skill{
@@ -266,7 +268,11 @@ section #main .main_qr_img span{
     background-repeat: no-repeat;
     margin-bottom: 70px;
 }
-
+/* 프로젝트 */
+#project{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 /* 콘택 */
 #contact .txt3{
     text-align: center;
@@ -300,4 +306,9 @@ section #main .main_qr_img span{
 /* 푸터 */
 footer{
     display:none;
+}
+
+/* 테블릿 */
+@media screen and (min-width : 768px) {
+    
 }
